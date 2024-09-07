@@ -1,6 +1,7 @@
 import "./App.css";
 import Accordian from "./components/accordian";
 import { ImageSlider } from "./components/image-slider/ImageSlider";
+import { LoadMoreButton } from "./components/load-more-button/LoadMoreButton";
 import { RandomColor } from "./components/random-color/RandomColor";
 import { StarRating } from "./components/star-rating/StarRating";
 
@@ -17,7 +18,10 @@ function App() {
       {/* <StarRating noOfStars={10}/> */}
 
       {/* Image Slider */}
-      <ImageSlider url={"https://picsum.photos/v2/list"} page={1} limit={10}/>
+      {/* <ImageSlider url={"https://picsum.photos/v2/list"} page={1} limit={10}/> */}
+
+      {/* load more button */}
+      <LoadMoreButton />
     </div>
   );
 }
