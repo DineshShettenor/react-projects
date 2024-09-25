@@ -3,6 +3,8 @@ import Accordian from "./components/accordian";
 import { CustomModal } from "./components/custom-modal/CustomModal";
 import { ModalTest } from "./components/custom-modal/ModalTest";
 import { TabsTest } from "./components/custom-tabs/TabsTest";
+import FeatureFlagGlobalState from "./components/feature-flag/context";
+import { FeatureFlags } from "./components/feature-flag/FeatureFlags";
 import { GithubProfileFinder } from "./components/github-profile-founder/GithubProfileFinder";
 import { ImageSlider } from "./components/image-slider/ImageSlider";
 import { LightDarkMode } from "./components/light-dark-mode/LightDarkMode";
@@ -12,6 +14,7 @@ import { RandomColor } from "./components/random-color/RandomColor";
 import { ScrollIndicator } from "./components/scroll-indicator/ScrollIndicator";
 import { SearchAutoComplete } from "./components/search-auto-complete/SearchAutoComplete";
 import { StarRating } from "./components/star-rating/StarRating";
+import TicTacToe from "./components/tic-tact-toe";
 import menus from "./components/tree-view/data";
 import { TreeView } from "./components/tree-view/TreeView";
 
@@ -54,8 +57,16 @@ function App() {
       {/* github profile founder */}
       {/* <GithubProfileFinder /> */}
 
-      {/* search uto complete */}
-      <SearchAutoComplete />
+      {/* search auto complete */}
+      {/* <SearchAutoComplete /> */}
+
+      {/* tic tact toe */}
+      {/* <TicTacToe /> */}
+
+      {/* Feature flag implementation */}
+      <FeatureFlagGlobalState>
+        <FeatureFlags />
+      </FeatureFlagGlobalState>
     </div>
   );
 }
