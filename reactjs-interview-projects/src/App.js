@@ -17,6 +17,7 @@ import { StarRating } from "./components/star-rating/StarRating";
 import TicTacToe from "./components/tic-tact-toe";
 import menus from "./components/tree-view/data";
 import { TreeView } from "./components/tree-view/TreeView";
+import { UseFetchCustomHookTest } from "./components/useFetch-hook/UseFetchCustomHookTest";
 
 function App() {
   return (
@@ -64,9 +65,12 @@ function App() {
       {/* <TicTacToe /> */}
 
       {/* Feature flag implementation */}
-      <FeatureFlagGlobalState>
+      {/* <FeatureFlagGlobalState>
         <FeatureFlags />
-      </FeatureFlagGlobalState>
+      </FeatureFlagGlobalState> */}
+
+      {/* useFetch custom hook */}
+      <UseFetchCustomHookTest />
     </div>
   );
 }
