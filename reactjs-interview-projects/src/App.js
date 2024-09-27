@@ -1,5 +1,6 @@
 import "./App.css";
 import Accordian from "./components/accordian";
+import { UseOnclickOutsideTest } from "./components/click-outside-modal/UseOnclickOutsideTest";
 import { CustomModal } from "./components/custom-modal/CustomModal";
 import { ModalTest } from "./components/custom-modal/ModalTest";
 import { TabsTest } from "./components/custom-tabs/TabsTest";
@@ -70,7 +71,10 @@ function App() {
       </FeatureFlagGlobalState> */}
 
       {/* useFetch custom hook */}
-      <UseFetchCustomHookTest />
+      {/* <UseFetchCustomHookTest /> */}
+
+      {/* useOnclick outside custom hook */}
+      <UseOnclickOutsideTest />
     </div>
   );
 }
