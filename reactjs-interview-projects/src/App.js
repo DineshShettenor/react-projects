@@ -1,6 +1,6 @@
 import "./App.css";
 import Accordian from "./components/accordian";
-import { UseOnclickOutsideTest } from "./components/click-outside-modal/UseOnclickOutsideTest";
+import { UseOnclickOutsideTest } from "./components/use-outside-modal/UseOnclickOutsideTest";
 import { CustomModal } from "./components/custom-modal/CustomModal";
 import { ModalTest } from "./components/custom-modal/ModalTest";
 import { TabsTest } from "./components/custom-tabs/TabsTest";
@@ -19,6 +19,7 @@ import TicTacToe from "./components/tic-tact-toe";
 import menus from "./components/tree-view/data";
 import { TreeView } from "./components/tree-view/TreeView";
 import { UseFetchCustomHookTest } from "./components/useFetch-hook/UseFetchCustomHookTest";
+import { UseWindowResizeTest } from "./components/use-window-resize/UseWindowResizeTest";
 
 function App() {
   return (
@@ -74,7 +75,10 @@ function App() {
       {/* <UseFetchCustomHookTest /> */}
 
       {/* useOnclick outside custom hook */}
-      <UseOnclickOutsideTest />
+      {/* <UseOnclickOutsideTest /> */}
+
+      {/* useWindowResize Custom Hook */}
+      <UseWindowResizeTest />
     </div>
   );
 }
