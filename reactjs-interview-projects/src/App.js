@@ -20,6 +20,8 @@ import menus from "./components/tree-view/data";
 import { TreeView } from "./components/tree-view/TreeView";
 import { UseFetchCustomHookTest } from "./components/useFetch-hook/UseFetchCustomHookTest";
 import { UseWindowResizeTest } from "./components/use-window-resize/UseWindowResizeTest";
+import { ScrollToTopAndBottom } from "./components/scroll-top-to-bottom/ScrollToTopAndBottom";
+import { ScrollToSection } from "./components/scroll-top-to-bottom/ScrollToSection";
 
 function App() {
   return (
@@ -78,7 +80,13 @@ function App() {
       {/* <UseOnclickOutsideTest /> */}
 
       {/* useWindowResize Custom Hook */}
-      <UseWindowResizeTest />
+      {/* <UseWindowResizeTest /> */}
+
+      {/* scroll to top and botttom */}
+      {/* <ScrollToTopAndBottom /> */}
+
+      {/* scroll to section */}
+      <ScrollToSection />
     </div>
   );
 }
